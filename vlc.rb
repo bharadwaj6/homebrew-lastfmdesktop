@@ -30,11 +30,8 @@ class Vlc < Formula
     # this is needed to find some m4 macros installed by homebrew's pkg-config 
     aclocal = "ACLOCAL_ARGS=\"-I /usr/local/share/aclocal\""
 
-    if MacOS.xcode_version.to_f >= 4.3
-      sdk = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk"
-    else
-      sdk = "/Developer/SDKs/MacOSX10.6.sdk"
-    end
+    # sdk = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk"
+    sdk = "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk"
 
     exp = ""
     if MacOS.xcode_version.to_f >= 4.3
